@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Titillium+Web&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,8 @@
 @media screen and (max-width: 780px) {
 
     .contain {
-        padding: .45rem 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
   }
   
@@ -15,7 +16,8 @@
   @media (min-width: 768px) and (max-width: 991px) {
     /* CSS styles for tablet view */
     .contain {
-        padding: .45rem 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
   }
   
@@ -23,7 +25,8 @@
   @media (min-width: 992px) {
     /* CSS styles for desktop view */
     .contain {
-        padding: .475rem 7.5%;
+        padding-left:7.5%;
+        padding-right:7.5%;
     }
   }
 
@@ -31,3 +34,40 @@
   .sans {
     font-family: 'Open Sans', sans-serif;
   }
+
+  .tilli {
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+
+  /* .slide-in-out.slide-in {
+    transform: translateX(0);
+  }
+  
+
+  .slide-in-out.slide-out {
+    transform: translateX(100%);
+  }
+   */
+
+
+
+   .slide-in-out {
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    animation: slide-in-out 2s ease-in-out;
+  }
+  
+  /* Slide in and out animation */
+  @keyframes slide-in-out {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
