@@ -65,7 +65,7 @@ const Navbar = () => {
 
 
       <div className='flex lg:hidden items-center relative'>
-        <CgMenuRight className='text-[24px] cursor-pointer' onClick={() => setShowMenu(true)}/>
+        <CgMenuRight className='text-[24px] cursor-pointer' onClick={() => setShowMenu(!showMennu)}/>
 
         
       
