@@ -4,7 +4,9 @@ import {BsSearch, BsHeart, BsCart2} from 'react-icons/bs'
 import {CgMenuRight} from 'react-icons/cg';
 import {FaLongArrowAltRight} from 'react-icons/fa'
 const Navbar = () => {
-    const [showMennu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false);
+    const [showSearch, setShowSearch] = useState(false)
+
     const navlinks = [
         {
             id: 1,
@@ -36,7 +38,7 @@ const Navbar = () => {
 
 
         
-      <div className='md:flex hidden gap-[2rem] items-center flex-row justify-between'>
+      <div className='lg:flex hidden gap-[2rem] items-center flex-row justify-between'>
         {
             navlinks.map((item) => (
                 <div key={item.id} className='sans text-[17px] hover:text-blue-900 cursor-pointer'>
@@ -46,8 +48,10 @@ const Navbar = () => {
         }
       </div>
 
-      <div className='lg:flex hidden flex-row items-center gap-5'>
-        <div className='flex items-center'>
+      <div className='flex flex-row items-center gap-5'>
+        
+        <BsSearch className='flex md:hidden text-[20px] cursor-pointer' onClick={() => (setShowMenu(false), setShowSearch(!showSearch))}/>
+        <div className=' hidden md:flex items-center'>
             <input className='border sans px-3 w-[15rem] py-2' placeholder='search...'/>
             <button className='bg-blue-900 text-white px-2 py-[11px]'>
                 <BsSearch  className='text-[20px]'/>
@@ -60,21 +64,30 @@ const Navbar = () => {
             <BsCart2 className='text-[24px]'/>
             <div className='absolute bg-blue-900 py-[1px] px-[4px] right-[-15px] text-white text-center pb text-[14px] top-[-15px]  -0 rounded-full'>0</div>
         </div>
-        
-      </div>
 
 
-      <div className='flex lg:hidden items-center relative'>
-        <CgMenuRight className='text-[24px] cursor-pointer' onClick={() => setShowMenu(!showMennu)}/>
+        <div className='flex lg:hidden items-center relative'>
+        <CgMenuRight className='text-[24px] cursor-pointer' onClick={() => (setShowMenu(!showMenu), setShowSearch(false))}/>
 
         
       
       </div>
       {
-        showMennu && <div className={`absolute flex lg:hidden w-[100vw]  bg-blue-900 h-[20rem] top-[8rem] md:top-[6.5rem]  right-0`}>
+        showMenu && <div className={`absolute flex lg:hidden w-[100vw]  bg-blue-900 h-[2rem] top-[8rem] md:top-[6.5rem]  right-0`}>
 
         </div>
       }
+
+      {
+        showSearch && <div className={`absolute flex lg:hidden w-[100vw]  bg- h-[2rem] top-[9rem] md:top-[6.5rem]  right-0`}>
+             <input className='border border-white border-b-gray-500 text-center flex md:hidden sans px-3 w-[80vw] ml-[10vw] py-3' placeholder='search...'/>
+        </div>
+      }
+       
+      </div>
+
+
+     
      
     </div>
   );
