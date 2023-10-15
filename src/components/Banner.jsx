@@ -74,9 +74,9 @@ const Banner = () => {
           </p>
           <button className="mt-[1.5rem] bg-blue-600 text-white px-4 py-2">Buy $399.89</button>
         </div>
-        <div className="lg:w-[50%] lg:min-w-[30rem] h-[40rem] w-[100%] flex justify-end items-end">
+        <div className="lg:w-[50%] lg:min-w-[30rem] h-[40rem] w-auto flex justify-end items-end">
           <img
-            src="/iphone1.png"
+            src="/iphone2.png"
             alt="watch image"
             className="w-auto h-[100%]"
           />
