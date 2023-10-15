@@ -50,12 +50,12 @@ const Banner = () => {
         </div>
       </div>
       : id === 2 ? <div
-      className="w-[100vw] overflow-hidden lg:pl-[7.5%] md:pl-[5%] pl-[1rem] h-[50rem] lg:h-[45rem] py-t border flex flex-col lg:flex-row  justify-between items-center "
+      className="w-[100vw] overflow-hidden lg:pl-[7.5%] md:pl-[5%] pl-[1rem] h-[50rem] lg:h-[45rem] pt-6 flex flex-col lg:flex-row  justify-between items-center "
    
       style={{
-        background: "rgb(237,220,238)",
+        background: "rgb(23,37,84)",
         background:
-        "linear-gradient(90deg, rgba(220,224,238,1) 0%, rgba(255,255,255,1) 8%, rgba(153,150,189,1) 67%, rgba(228,197,215,1) 92%, rgba(251,153,225,1) 100%)",
+        "linear-gradient(185deg, rgba(23,37,84,1) 0%, rgba(168,180,255,1) 68%, rgba(224,231,255,1) 86%, rgba(255,255,255,1) 100%)",
       }}
     >
       <div className="flex-1 sans">
@@ -63,16 +63,16 @@ const Banner = () => {
             02 <div className="w-16 mx-3 rounded-sm h-2 bg-blue-200 overflow-hidden">
                 <div className="h-[100%] w-[50%] bg-blue-700"></div></div> 04
           </div>
-          <h1 className="sans text-[48px] lg:text-[54px]">HANDS ON</h1>
-          <h1 className="sans text-[48px] lg:text-[54px] text-blue-900">iPhone 14 Pro Max</h1>
+          <h1 className="sans text-[48px] lg:text-[54px] text-white mt-3">HANDS ON</h1>
+          <h1 className="sans text-[48px] lg:text-[54px] text-blue-200">iPhone 14 Pro Max</h1>
           <div className="h-2 w-[20rem] lg:w-[30rem]" style={{
             background: "rgb(18,7,159)",
             background: "linear-gradient(90deg, rgba(18,7,159,1) 0%, rgba(96,56,242,1) 20%, rgba(113,124,255,1) 42%, rgba(168,180,255,1) 68%, rgba(224,231,255,1) 86%, rgba(255,255,255,1) 100%)"
           }}></div>
-          <p className="sans mt-[2rem]">
+          <p className="sans mt-[2rem] text-white">
             There are many variations of passages of Lorem ipsum available, but the majority have suffered in some form by injected 4umour.
           </p>
-          <button className="mt-[1.5rem] border bg-blue-600 text-white px-4 py-2">Buy $399.89</button>
+          <button className="mt-[1.5rem] bg-blue-600 text-white px-4 py-2">Buy $399.89</button>
         </div>
         <div className="lg:w-[50%] lg:min-w-[30rem] h-[40rem] w-[100%] flex justify-end items-end">
           <img
