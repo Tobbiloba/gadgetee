@@ -35,7 +35,7 @@ const Topbar = () => {
         }
     ]
   return (
-    <div className='flex flex-row h-[2rem] justify-between contain bg-blue-900 items-center'>
+    <div className='flex flex-row h-[3.5rem] md:h-[2rem] justify-between contain bg-blue-900 items-center'>
         <div className='flex text-white text-[18px] gap-1 md:gap-3'>
             <AiOutlineInstagram />
             <AiOutlineTwitter />

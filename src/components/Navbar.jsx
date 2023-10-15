@@ -71,7 +71,7 @@ const Navbar = () => {
       
       </div>
       {
-        showMennu && <div className={`absolute flex lg:hidden w-[100vw]  bg-blue-900 h-[20rem] top-[6.5rem]  right-0`}>
+        showMennu && <div className={`absolute flex lg:hidden w-[100vw]  bg-blue-900 h-[20rem] top-[8rem] md:top-[6.5rem]  right-0`}>
 
         </div>
       }
