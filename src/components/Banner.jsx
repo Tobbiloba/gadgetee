@@ -76,7 +76,7 @@ const Banner = () => {
         </div>
         <div className="lg:w-[50%] lg:min-w-[30rem] h-[40rem] w-[100%] flex justify-end items-end">
           <img
-            src="/iphone2.png"
+            src="/iphone1.png"
             alt="watch image"
             className="w-auto h-[100%]"
           />
