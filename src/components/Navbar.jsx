@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {
         showSearch && <div className={`absolute flex lg:hidden w-[100vw]  bg- h-[2rem] top-[9rem] md:top-[6.5rem]  right-0`}>
-             <input className='border border-white border-b-gray-500 text-center flex md:hidden sans px-3 w-[80vw] ml-[10vw] py-3' placeholder='search...'/>
+             <input className='border border-white outline-none border-b-gray-500 flex md:hidden sans px-5 w-[90vw] ml-[5vw] py-3' placeholder='search...'/>
         </div>
       }
        
