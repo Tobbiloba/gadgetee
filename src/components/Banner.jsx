@@ -21,7 +21,7 @@ const Banner = () => {
             01 <div className="w-16 mx-3 rounded-sm h-2 bg-blue-200 overflow-hidden">
                 <div className="h-[100%] w-[25%] bg-blue-700"></div></div> 04
           </div>
-          <h1 className="lg:text-[72px] text-[64px] text-blue-900 mt-[2rem] flex flex-col">
+          <h1 className="lg:text-[72px] text-[56px] md:text-[64px] text-blue-900 mt-[2rem] flex flex-col">
             Make life different.
             <br />
             <span className="flex items-center">
@@ -33,7 +33,7 @@ const Banner = () => {
           </h1>
           <p className="sans mt-[2rem]">
             Whether you're walking, driving, cycling, or taking  public
-            transit, watched makes it easy <br /> every step of the way.
+            transit, watched makes it easy <br className="hidden lg:flex"/> every step of the way.
           </p>
           <button className="mt-[1.5rem] border bg-blue-600 text-white px-4 py-2">Buy $399.89</button>
         </div>
