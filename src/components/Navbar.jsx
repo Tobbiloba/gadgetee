@@ -6,6 +6,7 @@ import {FaLongArrowAltRight} from 'react-icons/fa'
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [showSearch, setShowSearch] = useState(false)
+    const [currPage, setCurrPage] = useState(1)
 
     const navlinks = [
         {
@@ -73,8 +74,14 @@ const Navbar = () => {
       
       </div>
       {
-        showMenu && <div className={`absolute flex lg:hidden w-[100vw]  bg-blue-900 h-[2rem] top-[8rem] md:top-[6.5rem]  right-0`}>
-
+        showMenu && <div className={`absolute flex justify-evenly items-center  sans text-white lg:hidden w-[100vw]  bg-blue-900 h-[2.5rem] top-[8rem] md:top-[6.5rem]  right-0`}>
+            {
+            navlinks.map((item) => (
+                <div key={item.id} className={`sans text-[17px] hover:underline cursor-pointer ${item.id === currPage ? 'underline' : ''}`} onClick={() => setCurrPage(item.id)}>
+                    <p>{item.text}</p>
+                </div>
+            ))
+        }
         </div>
       }
 
