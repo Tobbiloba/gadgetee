@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media screen and (max-width: 780px) {
+
+    .contain {
+        padding: .45rem 1rem;
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles for tablet view */
+    .contain {
+        padding: .45rem 5%;
+    }
+  }
+  
+  /* Desktop view */
+  @media (min-width: 992px) {
+    /* CSS styles for desktop view */
+    .contain {
+        padding: .475rem 7.5%;
+    }
+  }
+
+
+  .sans {
+    font-family: 'Open Sans', sans-serif;
+  }
